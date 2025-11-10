@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidation</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #333;
+        color: whitesmoke;
+    }
+
+    .container{
+        position: absolute;
+        border: 1px solid black;
+        top: 30%;
+        left: 40%;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 1px 1px 1px 1px ;
+    }
+
+    .container h1{
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    label{
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    
+    input{
+        margin-bottom: 10px;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid white;
+        display: inline-block;   
+    }
+
+    a{
+        font-weight: bolder;
+    }
+
+    #submitBtn{
+        border-radius: 5px;
+        padding: 2px;
+        margin-top: 5px;
+        text-align: center;
+        font-weight: bolder;
+        cursor: pointer;
+        border: 1px sold #333;
+        position: absolute;
+        left: 38%;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="">
+            <label for="username">UserName:</label><input type="text" id="username" placeholder="Enter userName..."><br>
+            <label for="password">Password:</label><input type="password" name="password" id="password" placeholder="Enter password.."><br>
+            <span>Don't have an account:<a href="#">SignUp</a></span><br>
+            <button type="submit" onclick="ValidateForm()" id="submitBtn">Submit</button>
+            <div id="errorMsg"></div>
+        </form>
+    </div>
+    <script src="formValidation.js"></script>
+</body>
+</html>
