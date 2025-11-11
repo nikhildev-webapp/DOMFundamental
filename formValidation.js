@@ -9,7 +9,7 @@ const ValidateForm = () => {
         let span = document.createElement('span');
         span.style.color = 'red';
         span.textContent = 'UserName and Password Not Matched try again'
-        errMsg.appendChild(p);
+        errMsg.appendChild(span);
     } else {
         alert('Login successfully')
     }
