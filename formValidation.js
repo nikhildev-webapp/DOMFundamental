@@ -5,11 +5,11 @@ const ValidateForm = () => {
     
     if (username === "" && password === '') {
         alert('Fill the form'); 
-    } else if (username !== 'nikhilkholiya' && password === 'helloworld') {
-        let alert = createElement(p);
-        alert.textContent = 'userName and password not matched';
-        alert.style.color = 'red';
-        errMsg.appendChild(alert);
+    } else if (username !== 'nikhilkholiya' && password !== 'helloworld') {
+        let p = document.createElement('p');
+        p.style.color = 'red';
+        p.textContent = 'UserName and Password Not Matched try again'
+        errMsg.appendChild(p);
     } else {
         alert('Login successfully')
     }
