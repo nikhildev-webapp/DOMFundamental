@@ -4,7 +4,7 @@ const ValidateForm = () => {
     let errMsg = document.getElementById('errorMsg');
     
     if (username === "" && password === '') {
-        alert('Fill the filed'); 
+        alert('Enter the '); 
     }
     
     
