@@ -1,5 +1,3 @@
-const { createElement } = require("react");
-
 const ValidateForm = () => {
     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
